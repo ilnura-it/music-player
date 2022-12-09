@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jazz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter&family=Cabin&family=Caveat&family=Comfortaa&family=Crimson+Text&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div class="container">
+      <div class="song">
+        <p id="musicName">Song one</p>
+        <p id="artistName">Artist</p>
+      </div>
+
+      <div class="homeContainer">
+        <a class="home" href="../index.html"><img src="../src/icons8-home-button-48.png" alt="">
+      </div></a>
+
+      <div id="songSlider">
+        <input type="range" value="0" class="seek-bar" />
+        <span class="current-time">00:00</span>
+        <span class="song-duration">00:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="btn forward-btn">
+          <img src="../src/pre.png" alt="" />
+        </button>
+        <button class="btn play-btn">
+          <img src="../src/icons8-circled-play-50.png" alt="" />
+        </button>
+        <button class="btn pause">
+          <img src="../src/icons8-stop-circled-50.png" />
+        </button>
+        <button class="btn backward-btn"><img src="../src/frw.png" /></button>
+      </div>
+    </div>
+
+    <audio src="" id="audio"></audio>
+    <video autoplay loop muted defaultMuted playsinline id="myVideo" >
+      <source src="Restaurant - 3152.mp4" />
+    </video>
+
+    <script src="app.js"></script>
+    <script src="jazz.js"></script>
+  </body>
+</html>

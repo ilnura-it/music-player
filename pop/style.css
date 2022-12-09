@@ -1,0 +1,94 @@
+body{
+   background-color: rgb(151, 60, 44);
+}
+#songSlider{
+   width: 98%;
+   position: absolute;
+   bottom: 60px;
+}
+a{
+   position: fixed;
+   top: 20px;
+   right: 20px;
+   
+}
+.seek-bar{
+   -webkit-appearance: none;
+   width: 100%;
+   height: 5px;
+   border-radius: 10px;
+   background: rgba(250, 223, 229,0.5);
+   background: red;
+   overflow: hidden;
+   cursor: pointer;
+   
+}
+.seek-bar::-webkit-slider-thumb{
+   -webkit-appearance: none;
+   width: 1px;
+   height: 20px;
+   box-shadow: -400px 0 0 400px rgb(179, 123, 106);
+}
+.current-time,
+.song-duration{
+   color: rgb(250, 223, 229);
+    font-size: 15px;
+}
+.song-duration{
+   position: absolute;
+   right: 0;
+}
+.controls{
+   width: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-left: 40px;
+   position: absolute;
+   bottom: 20px;
+}
+
+.btn{
+   position: relative;
+   width: 50px;
+   height: 50px;
+   margin-left: 10px;
+   margin-right: 10px;
+   border-radius: 50%;
+   padding: 0;
+   background: rgba(233, 250, 252, 0.5);
+   cursor: pointer;
+   border: none;
+}
+.btn:focus{
+   background: rgb(179, 123, 106);
+}
+.forward-btn, .backward-btn{
+   width: 40px;
+   height: 40px;
+}
+
+#myVideo{
+   position: fixed;
+   top: 0;
+   right: 0;
+   min-width: 100%;
+   min-height: 100vh;
+   z-index: -1;
+}
+.song{
+   position: relative;
+   top: 20px;
+   left: 20px;
+   width: 200px;
+}
+#musicName, #artistName{
+   font-family: 'Comfortaa', cursive;
+   font-size: 15px;
+   color:rgba(233, 250, 252, 0.9);
+   margin: 5px;
+}
+#artistName{
+   font-size: 17px; 
+}
